@@ -1,0 +1,318 @@
+{
+	"info": {
+		"_postman_id": "732b0605-3f44-41f0-a339-07fcd9ef984c",
+		"name": "project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[GET] CREATE/REFRESH THE DATABASE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create"
+					]
+				},
+				"description": "CREATE/WIPE-OUT THE DATABASE"
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] array of professors containing array of activities + enrollments of students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] ALL STUDENTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] ALL PROFESSORS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] PROFESSOR by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] STUDENT by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] ADD STUDENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"professorUsername\": \"TestUser\",\r\n    \"professorPassword\": \"TestPass\",\r\n    \"professorFullName\": \"TestName\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/professors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"professors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] ADD PROFESSOR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"professorUsername\": \"TestUser\",\r\n    \"professorPassword\": \"TestPass\",\r\n    \"professorFullName\": \"TestName\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/professors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"professors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] ADD ACTIVITY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"professorUsername\": \"TestUser\",\r\n    \"professorPassword\": \"TestPass\",\r\n    \"professorFullName\": \"TestName\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/professors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"professors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] A PROFESSORS'S LIST OF ACTIVITIES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] A PROFESSORS'S SPECIFIC ACTIVITY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] A PROFESSORS'S SPECIFIC ACTIVITY BY UNIQUE KEY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[PUT] UPDATE AN ACTIVITY",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fullName\": \"Dan Andrei\",\n    \"status\": \"INACTIVE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/universities/1/students/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"universities",
+						"1",
+						"students",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[DELETE] AN ACTIVITY",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/universities/1/students/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"universities",
+						"1",
+						"students",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] AN ACTIVITY'S LIST OF ENROLLMENTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Enroll a STUDENT to an activity.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"professorUsername\": \"TestUser\",\r\n    \"professorPassword\": \"TestPass\",\r\n    \"professorFullName\": \"TestName\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/professors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"professors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[DELETE] a STUDENT from an ACTIVITY enrollment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/universities/1/students/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"universities",
+						"1",
+						"students",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] a STUDENT's LIST of ACTIVITY Enrollments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] AN ACTIVITY'S LIST OF FEEDBACKS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] ADD a NEW FEEDBACK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"professorUsername\": \"TestUser\",\r\n    \"professorPassword\": \"TestPass\",\r\n    \"professorFullName\": \"TestName\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/professors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"professors"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "description": "Proiect Test",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Impreuna Reusim",
+  "license": "ISC",
+  "repository": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "sequelize": "^6.12.0-alpha.1",
+    "sqlite3": "^5.0.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.16.3"
+  }
+}
